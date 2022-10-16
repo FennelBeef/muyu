@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+.box {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/fozu.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 500px) {
+  .box {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(../img/fozu2.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  header {
+    position: relative;
+    left: 30px;
+  }
+}
+img {
+  width: 100%;
+  height: 100%;
+  /* z-index: -1;
+  flex: 0; */
+}
+button {
+  border: 0px;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+#impotant {
+  height: 60px;
+  width: 400px;
+  font-size: 20px;
+  position: absolute;
+  top: 70%;
+}
+#ko1 {
+  height: 60px;
+  width: 400px;
+  font-size: 20px;
+  position: absolute;
+  top: 80%;
+}
+.score_box {
+  font-size: 30px;
+  height: 40px;
+  width: 250px;
+}
+.information {
+  font-size: 30px;
+  height: 40px;
+  width: 440px;
+}
+#name {
+  height: 25px;
+}
+header {
+  height: 100px;
+  padding: 10px;
+}
+.gongdeliang {
+  color: red;
+}
+#reg {
+  width: 80px;
+  height: 50px;
+  font-size: 30px;
+}
+.floatbox {
+  height: 60px;
+  width: 400px;
+  font-size: 50px;
+  position: absolute;
+  text-align: center;
+  top: 70%;
+  color: red;
+  display: none;
+  /* position: relative; */
+  animation: mymove 0.5s infinite;
+  animation-iteration-count: 1;
+}
+@keyframes mymove {
+  from {
+    bottom: 220px;
+  }
+  to {
+    top: 60%;
+  }
+}
